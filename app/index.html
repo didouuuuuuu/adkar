@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adhkar Quotidien</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <h1>أذكار</h1>
+
+        <div class="adhkar-card">
+            <p class="arabic-text" dir="rtl">سبحان الله وبحمده، سبحان الله العظيم</p>
+            <p class="translation-text">Gloire à Allah et Louange à Lui, Gloire à Allah l'Immense.</p>
+            <p class="count">العدد  : <span id="tasbihCount1">0</span></p>
+            <button onclick="incrementCount('tasbihCount1', 100)">Tasbih (100)</button>
+            <button onclick="resetCount('tasbihCount1')">Réinitialiser</button>
+        </div>
+
+        <div class="adhkar-card">
+            <p class="arabic-text" dir="rtl">لا إله إلا الله وحده لا شريك له، له الملك وله الحمد وهو على كل شيء قدير</p>
+            <p class="translation-text">Il n'y a de divinité qu'Allah, Seul, sans associé. À Lui la royauté, à Lui la louange, et Il est capable de toute chose.</p>
+            <p class="count">العدد  : <span id="tahlilCount1">0</span></p>
+            <button onclick="incrementCount('tahlilCount1', 10)">Tasbih (10)</button>
+            <button onclick="resetCount('tahlilCount1')">Réinitialiser</button>
+        </div>
+
+        <div class="adhkar-card">
+            <p class="arabic-text" dir="rtl">أستغفر الله</p>
+            <p class="translation-text">Je demande pardon à Allah.</p>
+            <p class="count">العدد  : <span id="istighfarCount1">0</span></p>
+            <button onclick="incrementCount('istighfarCount1', 70)">Istighfar (70)</button>
+            <button onclick="resetCount('istighfarCount1')">Réinitialiser</button>
+        </div>
+        <p class="arabic-text" dir="rtl">سبحان الله وبحمده، سبحان الله العظيم</p>
+        <p class="translation-text">سبحان الله وبحمده، سبحان الله العظيم</p>
+        <p class="count">العدد : <span id="tasbihKabeerCount">0</span></p>
+        <button onclick="incrementCount('tasbihKabeerCount', 100)">تسبيح (100)</button>
+        <button onclick="resetCount('tasbihKabeerCount')">إعادة تعيين</button>
+        </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
